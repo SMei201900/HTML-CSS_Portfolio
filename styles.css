@@ -1,5 +1,12 @@
 
 
+#navbar {
+    background: blue; 
+    position: fixed; /*I want the navmenu to stay when I scroll*/
+    top: 0px;
+    width: 100%; /*takes the whole horizontal spacing */
+}
+
 h1 { /*I want all Heading to be in the middle*/
     text-align: center;
 }
