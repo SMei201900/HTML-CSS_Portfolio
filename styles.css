@@ -23,8 +23,6 @@ nav ul {
 }
 
 
-
-
 h1 { /*I want all Heading to be in the middle*/
     text-align: center;
 }
@@ -33,20 +31,38 @@ welcome {
     min-height: 100vh;
     display: flex;
     flex-direction: column; /*allows the welcome texts to sit on top of each other*/
-    justify-content: center;
     text-align: center; /*I want my welcome to be in the middle*/
 }
 
 #welcome h1 {       /*I want the "Hello My name is" to be the biggest*/
     font-size: 82px;
+    margin-bottom: 10px;
 }
 
-.intro-sentence {
+#welcome p { /*this is the "I am an aspiring" sentence*/
     font-size: 2em; 
+    text-align: center;
 }
 
 #about h1, #projects h1 {
     font-size: 48px;
+}
+
+#about-left-column {
+    float: left;
+    width: 50%;
+}
+
+#about-right-column {
+    float: right;
+    width: 30%;
+    margin-top: 50px;
+}
+
+#projects {
+    margin-top: 50px;
+
+
 }
 
 
@@ -72,6 +88,12 @@ welcome {
 
 .project-image {
     flex: 1;
+}
+
+.project-image img { /*this is about the image of the project iself*/
+    min-height: 25vh; 
+    max-width: 50%;
+    object-fit: cover;
 }
 
 
