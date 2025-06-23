@@ -44,6 +44,27 @@ welcome {
     text-align: center;
 }
 
+#view-project-button {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background: beige;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 50px;
+    margin: 20px auto 0; 
+}
+
+#view-project-button a {
+    text-decoration: none; 
+}
+
+#view-project-button a:hover {
+    color: red;
+}
+
+
 #about h1, #projects h1 {
     font-size: 48px;
 }
