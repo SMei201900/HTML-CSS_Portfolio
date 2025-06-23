@@ -66,7 +66,12 @@ h1 { /*I want all Headings to be in the middle*/
 }
 
 /*the "I build things" sentence*/
-#about {
+#about h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+#about-text {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -78,16 +83,19 @@ h1 { /*I want all Headings to be in the middle*/
     width: 50%;
 }
 
-#about h1 {
-    text-align: center;
-}
-
-
-
 #about-right-column {
     width: 30%;
     margin-top: 50px;
 }
+
+#about-left-column p {
+    font-size: 18px;
+}
+
+
+
+
+
 
 
 /*my projects*/
