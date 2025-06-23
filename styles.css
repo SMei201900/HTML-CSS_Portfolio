@@ -1,6 +1,6 @@
 #navbar {
     background: orange; 
-    position: fixed; /*I want the navmenu to stay when I scroll*/
+    position: fixed; /*I want the nav menu to stay when I scroll*/
     top: 0px;
     width: 100%; /*takes the whole horizontal spacing */
 }
@@ -23,15 +23,16 @@ nav ul {
 }
 
 
-h1 { /*I want all Heading to be in the middle*/
+h1 { /*I want all Headings to be in the middle*/
     text-align: center;
 }
 
-welcome {
+#welcome {
     min-height: 100vh;
     display: flex;
     flex-direction: column; /*allows the welcome texts to sit on top of each other*/
     text-align: center; /*I want my welcome to be in the middle*/
+    justify-content: center;
 }
 
 #welcome h1 {       /*I want the "Hello My name is" to be the biggest*/
@@ -44,7 +45,7 @@ welcome {
     text-align: center;
 }
 
-#view-project-button {
+#view-project-button { /*this is the View my Projects Button*/
     display: flex;
     width: 100px;
     justify-content: center;
@@ -64,26 +65,39 @@ welcome {
     color: red;
 }
 
-
-#about h1, #projects h1 {
-    font-size: 48px;
+/*the "I build things" sentence*/
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 #about-left-column {
-    float: left;
+    flex: 1; 
     width: 50%;
 }
 
+#about h1 {
+    text-align: center;
+}
+
+
+
 #about-right-column {
-    float: right;
     width: 30%;
     margin-top: 50px;
 }
 
+
+/*my projects*/
+#projects h1 { 
+    font-size: 48px;
+}
+
+
 #projects {
     margin-top: 50px;
-
-
 }
 
 
