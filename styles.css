@@ -91,6 +91,7 @@ h1 { /*I want all Headings to be in the middle*/
 #about-left-column {
     flex: 1; 
     width: 50%;
+    padding-left: 15px;
 }
 
 #about-left-column p {
