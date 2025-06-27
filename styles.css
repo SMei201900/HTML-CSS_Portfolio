@@ -37,11 +37,11 @@ h1 { /*I want all Headings to be in the middle*/
     min-height: 100vh;
     display: flex;
     flex-direction: column; /*allows the welcome texts to sit on top of each other*/
-    text-align: center; /*I want my welcome to be in the middle*/
+    text-align: center; 
     justify-content: center;
 }
 
-#welcome h1 {       /*I want the "Hello My name is" to be the biggest*/
+#welcome h1 {    
     font-size: 82px;
     margin-bottom: 10px;
 }
@@ -72,7 +72,6 @@ h1 { /*I want all Headings to be in the middle*/
     color: pink;
 }
 
-/*the "I build things" sentence*/
 #about {
     border-top: 5px solid #C8D9F0;
 }
@@ -112,12 +111,6 @@ h1 { /*I want all Headings to be in the middle*/
     width: 100px;
 }
 
-
-
-
-
-
-/*my projects*/
 #projects h1 { 
     font-size: 48px;
 }
@@ -164,7 +157,6 @@ h1 { /*I want all Headings to be in the middle*/
     object-fit: cover;
 }
 
-
 /*contacts section*/
 #contacts {
     position: relative;
@@ -183,7 +175,7 @@ h1 { /*I want all Headings to be in the middle*/
     color: pink;
 }
 
-
+/*added for phone*/
 @media (max-width: 767px) {
     nav {
         display: none; /*hide the nav-menu when on phone*/
