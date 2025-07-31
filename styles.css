@@ -11,12 +11,18 @@ body {
     width: 100%; /*takes the whole horizontal spacing */
 }
 
+* {
+    margin: 0; 
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 20px; 
     justify-content: flex-end; /*moves content of navbar to the right side of the screen (my right)*/ 
     padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #navbar a {
