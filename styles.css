@@ -56,6 +56,38 @@ h1 { /*I want all Headings to be in the middle*/
     text-align: center;
 }
 
+.typewriter {
+    display: flex; 
+    justify-content: center;
+}
+
+.typewriter h1 {
+    overflow: hidden; /*hides content until the animation starts*/
+    white-space: nowrap; /*keeps it on a single line*/
+    border-right: 5px solid; /*the cursor*/
+    animation: typing 3s steps(25) forwards, 
+    /*this is a keyframe rule, it defines the typing animation
+        and "Steps" equals the number of characters
+        and "forwards" ensures the typing animation does not replay */
+        blink 1s step-end infinite; /*the linking cursor*/
+}
+
+@keyframes typing {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%; 
+    }
+}
+/*how long the animation should play*/
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
 #view-project-button { /*this is the View my Projects Button*/
     display: flex;
     width: 150;
