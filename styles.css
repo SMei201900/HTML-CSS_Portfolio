@@ -11,18 +11,14 @@ body {
     width: 100%; /*takes the whole horizontal spacing */
 }
 
-* {
-    margin: 0; 
-}
+* {margin: 0; } /*universal selector*/
 
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 20px; 
     justify-content: flex-end; /*moves content of navbar to the right side of the screen (my right)*/ 
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 #navbar a, #view-project-button a{
@@ -67,18 +63,19 @@ h1 { /*I want all Headings to be in the middle*/
     border-right: 5px solid; /*the cursor*/
     width: 0; 
     animation: 
-        typing 3s steps(25, end) forwards, 
+        typing 3s steps(25) forwards, 
             /*this is a keyframe rule, it defines the typing animation
                 and "Steps" equals the number of characters
-                and "forwards" ensures the typing animation does not replay */
+                and "forwards" ensures the typing animation does not replay; 
+                    it stays in its last state*/
         blink 0.7s step-end infinite, /*the blinking cursor*/ 
         hide-cursor 0.1s forwards; 
     animation-delay: 0s, 0s, 3s; 
 }
 
-@keyframes typing { /*how long the animation should play*/
+@keyframes typing { /*"typing" is the name I gave the animation*/
     from { width: 0; }
-    to { width: 100%; }
+    to { width: 100%; } /*how long the animation should play*/
 }
 
 @keyframes blink {
@@ -87,6 +84,20 @@ h1 { /*I want all Headings to be in the middle*/
 
 @keyframes hide-cursor {
     to { border-right-color: transparent; }
+}
+
+.typewriter-p {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1; /*this means the animation runs once*/
+    animation-fill-mode: forwards; 
+        /*forwards means the animaiton does not replay, it stays in its last state*/
+}
+
+@keyframes fadeInAnimation { /*fadeInAnimation is the name I gave to the animation*/
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 #view-project-button { /*this is the View my Projects Button*/
@@ -116,7 +127,7 @@ h1 { /*I want all Headings to be in the middle*/
     gap: 20px;
 }
 
-#about-left-column {
+#about-left-column { /*the text for the about me section*/
     flex: 1; 
     width: 50%;
     padding-left: 15px;
@@ -126,7 +137,7 @@ h1 { /*I want all Headings to be in the middle*/
     font-size: 18px;
 }
 
-#about-right-column {
+#about-right-column { /*the skills button*/
     width: 20%;
     line-height: 23px;
 }
@@ -142,9 +153,6 @@ h1 { /*I want all Headings to be in the middle*/
 
 #projects h1 { 
     font-size: 48px;
-}
-
-#projects {
     margin-top: 50px;
 }
 
@@ -156,7 +164,7 @@ h1 { /*I want all Headings to be in the middle*/
 }
 
 .project-tile {
-    border: 5px solid black; 
+    border: 5px solid #000040; 
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -167,6 +175,7 @@ h1 { /*I want all Headings to be in the middle*/
 .project-title {
     flex: 1;
     padding-left: 5px;
+    padding-top: 5px;
 }
 
 .project-title a{ 
