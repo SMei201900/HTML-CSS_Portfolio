@@ -9,7 +9,7 @@ const enableDarkMode = () => {
 
 const disableDarkMode = () => {
     document.body.classList.remove('darkmode')
-    localStorage.setItem("darkmode",null)
+    localStorage.setItem("darkmode", null)
 }
 
 if(darkmode ==="active") enableDarkMode() /*turns on Dark Mode if stored in local browser already*/
@@ -19,5 +19,6 @@ themeSwitch.addEventListener("click", () => {
     /*needs to be in here b/c without it we are only loading the localStorage data once aka when we first enter the website 
         BUT our clicks should be updating this info each time we click the sun-moon icons */
     darkmode !== "active" ? enableDarkMode() : disableDarkMode()
+    /*we are saying if darkmode is NOT active then we enableDarkMode aka turn it on ELSE we disableDarkMode*/
 }) 
 
