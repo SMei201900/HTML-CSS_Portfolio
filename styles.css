@@ -1,6 +1,18 @@
+:root {
+    --bg-color: linear-gradient(#A8B5E0, #C1D5F0, #D5E3F0);
+    --text-color: black; 
+}
+
+.darkmode {
+    --bg-color:#00509d;
+    --text-color: white; 
+}
+
+
 body {
     font-family: Nunito, Arial, Helvetica, sans-serif;
-      background: linear-gradient(#A8B5E0, #C1D5F0, #D5E3F0);
+    background: var(--bg-color);
+    color: var(--text-color); 
 }
 
 #navbar {
@@ -21,7 +33,7 @@ nav ul {
 }
 
 #navbar a, #view-project-button a{
-    color: black;
+    color: var(--text-color);
     text-decoration: none; 
 }
 
@@ -173,7 +185,7 @@ h1 { /*I want all Headings to be in the middle*/
 }
 
 .project-title a{ 
-    color: black;
+    color: var(--text-color);
 }
 
 .project-image { /*this is NOT the image itself, if you want to make edits*/
