@@ -8,6 +8,14 @@
     --text-color: white; 
 }
 
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0; 
+    border-radius: 50%; /*makes it round*/
+    background-color: var(--bg-color);
+}
+
 
 body {
     font-family: Nunito, Arial, Helvetica, sans-serif;
@@ -20,15 +28,17 @@ body {
     position: fixed; /*I want the nav menu to stay when I scroll*/
     top: 0px;
     width: 100%; /*takes the whole horizontal spacing */
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; 
 }
 
 * {margin: 0; } /*universal selector*/
 
 nav ul {
     list-style-type: none;
+    gap: 20px;
     display: flex;
-    gap: 20px; 
-    justify-content: flex-end; /*moves content of navbar to the right side of the screen (my right)*/ 
     padding: 20px;
 }
 
