@@ -2,12 +2,17 @@
     --bg-color: linear-gradient(#A8B5E0, #C1D5F0, #D5E3F0);
     --navbar-color: #DAF0F7;
     --text-color: black; 
+    --button-color: beige; 
+    --link-hover-color: pink;
 }
 
 .darkmode {
     --bg-color:#00509d;
     --navbar-color: #002365;
     --text-color: white; 
+    --button-color: #ffdd42;
+    --button-text-color: #1A237E;
+    --link-hover-color: #f765a3;
 }
 
 body {
@@ -66,13 +71,15 @@ nav ul {
 
 
 
+
+
 #navbar a, #view-project-button a{
     color: var(--text-color);
     text-decoration: none; 
 }
 
 #navbar a:hover, #view-project-button a:hover, .project-title a:hover, #contacts a:hover {
-    color: pink;
+    color: var(--link-hover-color);
 }
 
 h1 { /*I want all Headings to be in the middle*/
@@ -145,11 +152,15 @@ h1 { /*I want all Headings to be in the middle*/
     width: 150;
     justify-content: center;
     align-items: center;
-    background: beige;
+    background: var(--button-color);
     padding: 10px;
     border: 5px solid transparent;
     border-radius: 50px;
     margin: 20px auto 0; 
+}
+
+#view-project-button a {
+    color: var(--button-text-color);
 }
 
 #about {
@@ -183,12 +194,13 @@ h1 { /*I want all Headings to be in the middle*/
 }
 
 .skill-button {
-    background-color: beige;
+    background-color: var(--button-color);
     padding: 12px;
     margin-bottom: 10px;
     border: 2px solid transparent;
     border-radius: 15px;
     width: 100px;
+    color: var(--button-text-color);
 }
 
 #projects h1 { 
@@ -243,6 +255,7 @@ h1 { /*I want all Headings to be in the middle*/
 
 #contacts a {
     font-size: 18px;
+    color: var(--text-color);
 }
 
 /*added for phone*/
