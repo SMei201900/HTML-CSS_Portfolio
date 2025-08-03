@@ -1,15 +1,14 @@
 :root {
     --bg-color: linear-gradient(#A8B5E0, #C1D5F0, #D5E3F0);
+    --navbar-color: #DAF0F7;
     --text-color: black; 
 }
 
 .darkmode {
     --bg-color:#00509d;
+    --navbar-color: #002365;
     --text-color: white; 
 }
-
-
-
 
 body {
     font-family: Nunito, Arial, Helvetica, sans-serif;
@@ -18,7 +17,7 @@ body {
 }
 
 #navbar {
-    background: #DAF0F7; 
+    background: var(--navbar-color) ; 
     position: fixed; /*I want the nav menu to stay when I scroll*/
     top: 0px;
     width: 100%; /*takes the whole horizontal spacing */
