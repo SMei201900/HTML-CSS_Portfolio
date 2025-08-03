@@ -8,13 +8,7 @@
     --text-color: white; 
 }
 
-#theme-switch {
-    height: 50px;
-    width: 50px;
-    padding: 0; 
-    border-radius: 50%; /*makes it round*/
-    background-color: var(--bg-color);
-}
+
 
 
 body {
@@ -41,6 +35,37 @@ nav ul {
     display: flex;
     padding: 20px;
 }
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0; /*makes icon biggest size possible in their provided container*/
+    margin: 10px 10px 10px -20px; /*clockwise, top -right -bottom -left*/
+    border-radius: 50%; /*makes it round*/
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg {
+    fill:var(--text-color);
+}
+
+#theme-switch svg:last-child{ /*this hide the sun icon during light/default mode*/
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child { /*this will hide the moon icon during dark mode*/
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+
+
 
 #navbar a, #view-project-button a{
     color: var(--text-color);
