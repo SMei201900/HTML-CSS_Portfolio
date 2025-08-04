@@ -22,3 +22,5 @@ themeSwitch.addEventListener("click", () => {
     /*we are saying if darkmode is NOT active then we enableDarkMode aka turn it on ELSE we disableDarkMode*/
 }) 
 
+/*testing changes made on github*/
+
